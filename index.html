@@ -31,7 +31,7 @@
 
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
 
-        /* --- NAVBAR STYLE COLLAB --- */
+        /* --- NAVBAR --- */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -93,21 +93,19 @@
             color: var(--milleis-blue);
         }
 
-        /* --- SECTION PROFIL (GRILLE DE 3 CARTES) --- */
+        /* --- SECTION PROFIL --- */
         .section-dark { padding: 100px 10%; }
         
         .section-header { margin-bottom: 50px; text-align: left; }
         .section-header h2 { font-size: 2.5rem; color: var(--milleis-gold); }
 
-        /* La Grille Magique : 3 colonnes égales */
         .hybrid-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            align-items: stretch; /* Force les cartes à avoir la même hauteur */
+            align-items: stretch;
         }
 
-        /* Le Style des Cartes */
         .glass-card {
             background: var(--glass-bg);
             border: 1px solid var(--glass-border);
@@ -136,7 +134,6 @@
         }
         .skill-list i { color: var(--milleis-gold); margin-right: 12px; margin-top: 4px; }
 
-        /* Badge spécifique pour la carte Luxe */
         .luxe-badge {
             font-size: 0.8rem;
             color: var(--milleis-gold);
@@ -160,12 +157,23 @@
             margin-top: 50px;
         }
 
-        /* --- RESPONSIVE --- */
+        .contact-section {
+            text-align: center;
+            padding: 60px 20px;
+            background: #050e1a;
+        }
+        .contact-link {
+            color: #fff; text-decoration: none; font-size: 1.1rem; margin: 0 20px; transition: color 0.3s;
+            display: inline-block; margin-bottom: 10px;
+        }
+        .contact-link:hover { color: var(--milleis-gold); }
+
         @media (max-width: 900px) {
             h1 { font-size: 2.5rem; }
             .cyber-banner { flex-direction: column; text-align: center; }
             .navbar { padding: 15px; }
             .hybrid-grid { grid-template-columns: 1fr; }
+            .contact-link { display: block; margin: 15px 0; }
         }
     </style>
 </head>
@@ -182,22 +190,22 @@
             </span>
         </div>
         <div style="font-size: 0.7rem; color: var(--milleis-gold); border: 1px solid var(--milleis-gold); padding: 5px 15px; border-radius: 50px;">
-            OFFRE DE COLLABORATION
+            CANDIDATURE STAGE
         </div>
     </nav>
 
     <section class="hero">
-        <div style="max-width: 700px; z-index: 10;">
-            <h4 style="color: var(--milleis-gold); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">Ingénierie & Finance Patrimoniale</h4>
-            <h1>La rigueur de la Data,<br>l'esprit Boutique.</h1>
+        <div style="max-width: 750px; z-index: 10;">
+            <h4 style="color: var(--milleis-gold); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">Sélection de Fonds & Ingénierie</h4>
+            <h1>L'expertise Technique<br>au service de la Gestion.</h1>
             <p style="font-size: 1.2rem; color: #a8b2d1; margin-bottom: 30px;">
-                Étudiant Ingénieur Statisticien & Actuaire (ex-MIASHS).<br>
-                Je ne cherche pas un stage, je cherche à apporter ma valeur ajoutée technique à l'exigence de Milleis Banque.
+                Étudiant Ingénieur (Statistique/Actuariat) disponible dès Avril.<br>
+                Je souhaite mettre ma maîtrise de <strong>VBA</strong>, mon analyse macroéconomique et ma rigueur au service de l'équipe de sélection de fonds.
             </p>
             
             <div style="display: flex; gap: 15px; flex-wrap: wrap;">
                 <a href="cv_vincent.pdf" target="_blank" class="btn-gold" style="background: rgba(197, 165, 114, 0.1);">
-                    <i class="fa-solid fa-file-user" style="margin-right: 10px;"></i> Télécharger le CV
+                    <i class="fa-solid fa-file-user" style="margin-right: 10px;"></i> Voir le CV
                 </a>
                 <a href="lettre_motivation.pdf" target="_blank" class="btn-gold">
                     <i class="fa-solid fa-envelope-open-text" style="margin-right: 10px;"></i> Lettre de Motivation
@@ -209,42 +217,42 @@
 
     <section id="profil" class="section-dark">
         <div class="section-header">
-            <h2>Le Profil "FinTech" & Luxe</h2>
-            <p style="color: #a8b2d1; max-width: 700px;">L'alliance rare entre la compréhension des mécanismes financiers, les codes du prestige et la puissance de calcul.</p>
+            <h2>Le Profil Idéal pour le Poste</h2>
+            <p style="color: #a8b2d1; max-width: 700px;">Une triple compétence qui répond exactement aux besoins de l'offre : Analyse Financière, Développement d'outils et Aisance relationnelle.</p>
         </div>
 
         <div class="hybrid-grid">
             
             <div class="glass-card">
-                <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
-                <h3>L'ADN Financier (MIASHS)</h3>
+                <div class="card-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                <h3>Finance de Marché & Fonds</h3>
                 <ul class="skill-list">
-                    <li><i class="fa-solid fa-check"></i><span><strong>Mathématiques Financières :</strong> Actualisation et valorisation.</span></li>
-                    <li><i class="fa-solid fa-check"></i><span><strong>Microéconomie :</strong> Analyse des marchés.</span></li>
-                    <li><i class="fa-solid fa-check"></i><span><strong>Psychologie Économique :</strong> Comprendre l'humain derrière le patrimoine.</span></li>
+                    <li><i class="fa-solid fa-check"></i><span><strong>Macroéconomie :</strong> Analyse des zones US, Europe et Émergents.</span></li>
+                    <li><i class="fa-solid fa-check"></i><span><strong>Sélection de Fonds & ETF :</strong> Compréhension des classes d'actifs (Actions, Obligations).</span></li>
+                    <li><i class="fa-solid fa-check"></i><span><strong>Analyse Extra-Financière :</strong> Sensibilité aux critères ESG et Due Diligence.</span></li>
                 </ul>
             </div>
 
             <div class="glass-card" style="border-color: var(--milleis-gold); box-shadow: 0 0 15px rgba(197, 165, 114, 0.1);">
                 <div class="card-icon"><i class="fa-regular fa-gem"></i></div>
-                <h3>Codes du Luxe & Excellence</h3>
+                <h3>Communication & Pédagogie</h3>
                 <p style="font-size: 0.95rem; color: #ccd6f6; margin-bottom: 20px; flex-grow: 1;">
-                    Expérience terrain au sein de maisons de prestige et en événementiel. Je sais qu'en Banque Privée, la relation client et la discrétion priment sur la technique.
+                    Expérience en Maisons de Prestige. Je possède l'aisance relationnelle nécessaire pour l'animation commerciale, la formation des banquiers et les échanges avec les sociétés de gestion.
                 </p>
                 <div>
-                    <span class="luxe-badge"><i class="fa-solid fa-user-tie"></i> Savoir-Être</span>
-                    <span class="luxe-badge"><i class="fa-solid fa-champagne-glasses"></i> Prestige</span>
-                    <span class="luxe-badge"><i class="fa-solid fa-handshake"></i> Discrétion</span>
+                    <span class="luxe-badge"><i class="fa-solid fa-user-tie"></i> Animation</span>
+                    <span class="luxe-badge"><i class="fa-solid fa-chalkboard-user"></i> Pédagogie</span>
+                    <span class="luxe-badge"><i class="fa-solid fa-handshake"></i> Relationnel</span>
                 </div>
             </div>
 
             <div class="glass-card">
-                <div class="card-icon"><i class="fa-solid fa-database"></i></div>
-                <h3>La Puissance Analytique</h3>
+                <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                <h3>Outils de Pilotage & VBA</h3>
                 <ul class="skill-list">
-                    <li><i class="fa-solid fa-check"></i><span><strong>Python & R :</strong> Automatisation et modélisation.</span></li>
-                    <li><i class="fa-solid fa-check"></i><span><strong>Actuariat :</strong> Évaluation rigoureuse des risques.</span></li>
-                    <li><i class="fa-solid fa-check"></i><span><strong>Big Data :</strong> Traitement des données complexes.</span></li>
+                    <li><i class="fa-solid fa-check"></i><span><strong>VBA & Pack Office :</strong> Expert. Capacité à créer et améliorer vos outils de pilotage dès le 1er jour.</span></li>
+                    <li><i class="fa-solid fa-check"></i><span><strong>Python & R :</strong> Pour l'analyse quantitative avancée et le traitement de données.</span></li>
+                    <li><i class="fa-solid fa-check"></i><span><strong>Middle Office :</strong> Rigueur dans le paramétrage des produits.</span></li>
                 </ul>
             </div>
 
@@ -253,19 +261,29 @@
 
     <section class="cyber-banner">
         <div style="flex: 2;">
-            <h3 style="font-size: 2rem; color: var(--milleis-gold); margin-bottom: 15px;">L'Atout Confiance : Cybersécurité</h3>
+            <h3 style="font-size: 2rem; color: var(--milleis-gold); margin-bottom: 15px;">Rigueur & Conformité</h3>
             <p style="font-size: 1.1rem; color: #e6f1ff; margin-bottom: 15px;">
-                J'ai effectué un stage de 6 mois en cybersécurité. Chez Milleis, je saurai appliquer cette rigueur pour protéger la confidentialité absolue de la clientèle patrimoniale.
+                Fort d'une expérience en cybersécurité, je possède une rigueur absolue dans l'exécution des missions et le respect des process (paramétrage, due diligence).
             </p>
-            <p style="font-style: italic; color: var(--milleis-gold); opacity: 0.8;">"La performance sans la sécurité n'est rien."</p>
+            <p style="font-style: italic; color: var(--milleis-gold); opacity: 0.8;">"Fiabilité des données et précision de l'analyse."</p>
         </div>
         <div style="flex: 1; text-align: center; font-size: 5rem; color: var(--milleis-gold); opacity: 0.3;">
-            <i class="fa-solid fa-shield-halved"></i>
+            <i class="fa-solid fa-list-check"></i>
         </div>
     </section>
 
-    <footer style="text-align: center; padding: 40px; font-size: 0.8rem; opacity: 0.6;">
-        © 2024 Vincent Guiblain. Candidature exclusive Milleis Banque Privée.
+    <section class="contact-section">
+        <h3 style="color: var(--milleis-gold); font-size: 1.8rem; margin-bottom: 30px;">Prêt à intégrer l'équipe en Avril</h3>
+        <a href="tel:+33610748702" class="contact-link">
+            <i class="fa-solid fa-phone" style="margin-right: 10px;"></i> 06 10 74 87 02
+        </a>
+        <a href="mailto:vincent.guiblain@gmail.com" class="contact-link">
+            <i class="fa-solid fa-envelope" style="margin-right: 10px;"></i> vincent.guiblain@gmail.com
+        </a>
+    </section>
+
+    <footer style="text-align: center; padding: 20px; font-size: 0.8rem; opacity: 0.6; background-color: #050e1a;">
+        © 2024 Vincent Guiblain. Candidature dédiée Milleis Banque Privée.
     </footer>
 
 </body>
