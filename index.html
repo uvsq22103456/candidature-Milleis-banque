@@ -76,14 +76,16 @@
         }
 
         .btn-gold {
-            padding: 15px 35px;
+            padding: 15px 30px;
             border: 2px solid var(--milleis-gold);
             color: var(--milleis-gold);
             font-weight: 600;
             text-transform: uppercase;
             text-decoration: none;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
             transition: all 0.3s ease;
+            font-size: 0.9rem;
         }
 
         .btn-gold:hover {
@@ -155,6 +157,7 @@
             border-top: 1px solid var(--milleis-gold);
             border-bottom: 1px solid var(--milleis-gold);
             gap: 40px;
+            margin-top: 50px;
         }
 
         /* --- RESPONSIVE --- */
@@ -162,6 +165,7 @@
             h1 { font-size: 2.5rem; }
             .cyber-banner { flex-direction: column; text-align: center; }
             .navbar { padding: 15px; }
+            .hybrid-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -190,7 +194,16 @@
                 Étudiant Ingénieur Statisticien & Actuaire (ex-MIASHS).<br>
                 Je ne cherche pas un stage, je cherche à apporter ma valeur ajoutée technique à l'exigence de Milleis Banque.
             </p>
-            <a href="#profil" class="btn-gold">Découvrir le profil hybride</a>
+            
+            <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="cv_vincent.pdf" target="_blank" class="btn-gold" style="background: rgba(197, 165, 114, 0.1);">
+                    <i class="fa-solid fa-file-user" style="margin-right: 10px;"></i> Télécharger le CV
+                </a>
+                <a href="lettre_motivation.pdf" target="_blank" class="btn-gold">
+                    <i class="fa-solid fa-envelope-open-text" style="margin-right: 10px;"></i> Lettre de Motivation
+                </a>
+            </div>
+
         </div>
     </section>
 
@@ -242,8 +255,7 @@
         <div style="flex: 2;">
             <h3 style="font-size: 2rem; color: var(--milleis-gold); margin-bottom: 15px;">L'Atout Confiance : Cybersécurité</h3>
             <p style="font-size: 1.1rem; color: #e6f1ff; margin-bottom: 15px;">
-                J'ai effectué un stage en cybersécurité (protection des données sensibles).<br>
-                Chez Milleis, je saurai appliquer cette rigueur pour protéger la confidentialité absolue de la clientèle patrimoniale.
+                J'ai effectué un stage de 6 mois en cybersécurité. Chez Milleis, je saurai appliquer cette rigueur pour protéger la confidentialité absolue de la clientèle patrimoniale.
             </p>
             <p style="font-style: italic; color: var(--milleis-gold); opacity: 0.8;">"La performance sans la sécurité n'est rien."</p>
         </div>
